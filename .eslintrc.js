@@ -9,5 +9,8 @@ module.exports = {
       "browser": true,
       "mocha": true,
       "es6": true
+  },
+  "rules": {
+    "no-param-reassign": 0
   }
 };
