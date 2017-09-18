@@ -10,6 +10,5 @@ export default function searchEnterTrigger() {
     e.preventDefault();
     spotify.search.albums(searchInput.value)
       .then(data => renderAlbums(data.albums.items, albumList));
-
-  })
+  });
 }
