@@ -1,5 +1,5 @@
-export default function renderAlbums(data, element) {
-  const markUp = data.map(album => `
+function createMarkUp(albums) {
+  return albums.map(album => `
     <div class="list-item">
       <img src="${album.images[2].url}" alt="${album.name}" class="list-image">
       <div class="list-description">
@@ -9,8 +9,8 @@ export default function renderAlbums(data, element) {
     </div>`)
     .join('')
   ;
+}
 
-  //console.log(markUp);
-
-  element.innerHTML = markUp;
+export default function renderAlbums(data, element) {
+ element.innerHTML = createMarkUp(data);
 }

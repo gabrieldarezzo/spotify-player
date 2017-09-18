@@ -1,7 +1,8 @@
 import 'jsdom-global/register'
-import { expect } from 'chai';
+import chai, { expect } from 'chai';
 import renderAlbums from '../src/AlbumList';
 
+chai.use(require('chai-string'));
 
 describe('AlbumsList', () => {
 
@@ -36,21 +37,20 @@ describe('AlbumsList', () => {
     },
   ];
 
-  const markUp = `
-   <div class="list-item">
-      <img src="${data[0].images[2].url}" alt="${data[0].name}" class="list-image">
-      <div class="list-description">
-        <p class="list-title">${data[0].name}</p>
-        <p class="list-subtitle">${data[0].artists[0].name}</p>
-      </div>
-    </div> `;
+  const markup = `
+  <div class="list-item">
+    <img src="${data[0].images[2].url}" alt="${data[0].name}" class="list-image">
+    <div class="list-description">
+      <p class="list-title">${data[0].name}</p>
+      <p class="list-subtitle">${data[0].artists[0].name}</p>
+    </div>
+  </div>`;
 
-  it('should create abd append the markup given a correct data', () => {
+  it('should created append the markup given a correct data', () => {
     const element = document.createElement('div');
     renderAlbums(data, element);
 
-    //console.log(markUp);
-    //expect(element.innerHTML).to.be.eql(markUp);
+    expect(element.innerHTML).to.equalIgnoreSpaces(markup);
   });
 
 });
