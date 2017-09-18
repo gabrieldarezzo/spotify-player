@@ -11,6 +11,7 @@ module.exports = {
       "es6": true
   },
   "rules": {
-    "no-param-reassign": 0
+    "no-param-reassign": 0,
+    "linebreak-style": 0
   }
 };
