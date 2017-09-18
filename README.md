@@ -19,7 +19,7 @@ This Application relies on [Fetch API](https://fetch.spec.whatwg.org/). And this
 
 ## How to Run
 
-1. First go to [Spotify Developers API](https://developer.spotify.com/web-api/) and create your Token. Then add your token on [src/spotify.js](src/spotify.js). **Remember that the token will expire in 60min**
+1. First go to [Spotify Developers API](https://developer.spotify.com/web-api/) and create your Token. Then add your token on [src/spotify.js](src/Spotify.js). **Remember that the token will expire in 60min**
 2. Install the dependencies with `npm i`.
 3. Run your application with `npm start`.
 
@@ -37,15 +37,14 @@ Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduc
 
 ## Versioning
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/willianjusten/spotify-wrapper-player/tags).
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/gabrieldarezzo/spotify-player/tags).
 
 ## Authors
 
-| ![Willian Justen](https://avatars2.githubusercontent.com/u/3991845?v=3&s=150)|
+| ![Gabriel Darezzo](https://avatars2.githubusercontent.com/u/4562368?v=4&s=460)|
 |:---------------------:|
-|  [Willian Justen](https://github.com/willianjusten/)   |
+|  [Gabriel Darezzo](https://github.com/gabrieldarezzo/)   |
 
-See also the list of [contributors](https://github.com/willianjusten/spotify-wrapper-player/contributors) who participated in this project.
 
 ## License
 
