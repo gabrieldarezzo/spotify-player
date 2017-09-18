@@ -1,3 +1,8 @@
+[![Build Status](https://travis-ci.org/gabrieldarezzo/spotify-player.svg?branch=master)](https://travis-ci.org/gabrieldarezzo/spotify-player)  
+[![Coverage Status](https://coveralls.io/repos/github/gabrieldarezzo/spotify-player/badge.svg)](https://coveralls.io/github/gabrieldarezzo/spotify-player)
+
+
+
 # Spotify Wrapper Player
 
 ![Spotify Wrapper Player Screenshot](example/screenshot.png)
